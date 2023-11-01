@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+
+</head>
+
+<body>
+    <section class="section">
+        <nav>
+            <a href="index.html"><img src="./logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i onclick="showMenu()" class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing of the world.You just need to learn HTML,CSS <br> & JS and
+                you are good to go.
+            </p>
+            <a href=" " class="hero-btn">Visit us to know more. </a>
+        </div>
+    </section>
+
+
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        const showMenu =()=>{
+            navLinks.style.right="0"
+        }
+        const hideMenu =()=>{
+            navLinks.style.right="-200px"
+        }
+    </script>
+
+</html>
